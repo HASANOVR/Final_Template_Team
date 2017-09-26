@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,IAAI;EACA,UAAU,ECDF,OAAO;;ACAnB,IAAI;EACA,UAAU,EDAH,OAAO;;AEDlB,IAAI;EACA,UAAU,EAAE,IAAI;;ACDpB,IAAI;EACA,UAAU,EAAE,IAAI",
+"sources": ["../sass/_home.scss","../sass/style.scss","../sass/_about.scss","../sass/_services.scss","../sass/_contact.scss"],
 "names": [],
 "file": "style.css"
 }
