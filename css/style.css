@@ -91,13 +91,466 @@ body {
   .navbar-cont {
     display: flex;
     justify-content: center; } }
-span {
+body {
+  height: 3000px; }
+
+#about #smartSeo {
+  padding: 40px 0px; }
+  #about #smartSeo .inner {
+    border: 1px solid #25d25e !important;
+    padding: 25px; }
+    #about #smartSeo .inner .heading h2 {
+      font-size: 28px;
+      font-weight: normal;
+      color: #333333;
+      margin: 0 0 15px 0; }
+    #about #smartSeo .inner .heading p {
+      font-size: 14px;
+      font-weight: 300;
+      color: #777777;
+      letter-spacing: 1px;
+      line-height: 26px; }
+    #about #smartSeo .inner ul {
+      display: flex;
+      align-items: center;
+      padding-left: 0px !important; }
+      #about #smartSeo .inner ul li {
+        list-style: none;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        line-height: 26px;
+        color: #777777;
+        display: inline-block;
+        margin-right: 25px;
+        position: relative; }
+        #about #smartSeo .inner ul li:before {
+          content: '|';
+          position: absolute;
+          right: -10px;
+          top: 0px; }
+        #about #smartSeo .inner ul li:last-child::before {
+          content: ''; }
+        #about #smartSeo .inner ul li a {
+          color: #333333 !important; }
+#about #golas .cont-fluid {
+  background: #f7f7f7;
+  padding: 100px 0px;
+  border-top: 1px solid #eaeaea; }
+  #about #golas .cont-fluid .cont .item {
+    padding-left: 60px;
+    position: relative; }
+    #about #golas .cont-fluid .cont .item:hover i {
+      background: #25d25e;
+      color: white;
+      transition: all 0.3s linear; }
+    #about #golas .cont-fluid .cont .item i {
+      position: absolute;
+      top: 3px;
+      left: -13px;
+      border: 1px solid #dddddd;
+      color: #25d25e;
+      font-size: 24px;
+      padding: 17px 20px; }
+    #about #golas .cont-fluid .cont .item h4 {
+      color: #333333;
+      font-size: 18px;
+      font-weight: normal;
+      margin-bottom: 15px; }
+    #about #golas .cont-fluid .cont .item p {
+      color: #777777;
+      font-size: 13px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      line-height: 26px; }
+#about #ourCompany .cont-fluid {
+  padding: 100px 0px;
+  height: inherit;
+  border-top: 1px solid #eaeaea; }
+  #about #ourCompany .cont-fluid .cont {
+    display: flex; }
+    #about #ourCompany .cont-fluid .cont img {
+      border-radius: 5px; }
+    #about #ourCompany .cont-fluid .cont .head h2 {
+      position: relative;
+      font-size: 28px;
+      font-weight: normal;
+      margin-bottom: 25px;
+      padding-bottom: 25px;
+      color: #333333; }
+      #about #ourCompany .cont-fluid .cont .head h2:before {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 80px;
+        height: 2px;
+        background: #25d25e; }
+    #about #ourCompany .cont-fluid .cont .head p {
+      font-size: 14px;
+      font-weight: 300;
+      margin-bottom: 15px;
+      color: #777777;
+      letter-spacing: 1px; }
+    #about #ourCompany .cont-fluid .cont #accordion h3 {
+      font-size: 14px;
+      letter-spacing: 1px;
+      font-weight: 300;
+      border-bottom: 1px solid #dddddd;
+      color: #333333;
+      padding: 20px 0px;
+      position: relative;
+      cursor: pointer;
+      display: block !important; }
+    #about #ourCompany .cont-fluid .cont #accordion .plus:before {
+      font-family: 'themify';
+      content: '\e61a';
+      position: absolute;
+      right: 10px;
+      top: 22px;
+      color: #777777; }
+    #about #ourCompany .cont-fluid .cont #accordion .minus:before {
+      font-family: 'themify';
+      content: '\e622';
+      position: absolute;
+      right: 10px;
+      top: 22px;
+      color: #777777; }
+    #about #ourCompany .cont-fluid .cont #accordion p {
+      font-size: 14px;
+      letter-spacing: 1px;
+      line-height: 26px;
+      font-weight: 300;
+      color: #777777;
+      padding: 20px; }
+#about #counter .cont-fluid {
+  padding: 100px 0px;
+  height: inherit;
+  background: url("../img/counter-bg.jpg") repeat fixed center; }
+#about #counter .cont {
+  padding: 30px 0px; }
+  #about #counter .cont h2 {
+    float: left;
+    color: #25d25e;
+    font-weight: 900;
+    font-size: 35px;
+    letter-spacing: 1px; }
+  #about #counter .cont span {
+    float: left;
+    color: #25d25e;
+    font-weight: 900;
+    font-size: 35px;
+    letter-spacing: 1px;
+    padding-bottom: 0px;
+    line-height: 36px;
+    margin-bottom: 0px;
+    background-color: transparent; }
+  #about #counter .cont p {
+    clear: both;
+    font-size: 14px;
+    font-weight: 300;
+    color: #dddddd;
+    letter-spacing: 1px; }
+#about #teamMembers .cont-fluid {
+  padding: 100px 0px;
+  height: inherit;
   background: #f7f7f7; }
+  #about #teamMembers .cont-fluid .cont .heading {
+    margin-bottom: 40px; }
+    #about #teamMembers .cont-fluid .cont .heading h1 {
+      font-size: 28px;
+      font-weight: normal;
+      letter-spacing: 1.12px;
+      text-align: center;
+      padding-bottom: 25px;
+      margin-bottom: 20px;
+      position: relative; }
+      #about #teamMembers .cont-fluid .cont .heading h1:after {
+        content: '';
+        width: 80px;
+        height: 2px;
+        background-color: #25d25e;
+        position: absolute;
+        bottom: 0px;
+        left: calc(50% - 40px); }
+    #about #teamMembers .cont-fluid .cont .heading p {
+      font-size: 14px;
+      font-weight: 300;
+      color: #777777;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+      text-align: center; }
+  #about #teamMembers .cont-fluid .cont .team-member {
+    position: relative;
+    overflow: hidden; }
+    #about #teamMembers .cont-fluid .cont .team-member .img {
+      width: 100%;
+      overflow: hidden; }
+      #about #teamMembers .cont-fluid .cont .team-member .img .cover {
+        padding: 0px 15px;
+        position: absolute;
+        top: 0px;
+        left: 15px;
+        width: calc(100% - 30px);
+        max-width: 360px;
+        height: 100%;
+        background-color: #25d25e; }
+    #about #teamMembers .cont-fluid .cont .team-member .info_first {
+      padding: 0px 15px;
+      position: absolute;
+      top: 0px;
+      left: 15px;
+      width: calc(100% - 30px);
+      max-width: 360px;
+      height: 100%;
+      margin: 0 auto;
+      display: none;
+      z-index: 2; }
+      #about #teamMembers .cont-fluid .cont .team-member .info_first .info {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        color: white;
+        text-align: center; }
+        #about #teamMembers .cont-fluid .cont .team-member .info_first .info h4 {
+          font-size: 18px;
+          font-weight: bold;
+          color: #ffffff; }
+        #about #teamMembers .cont-fluid .cont .team-member .info_first .info p {
+          font-size: 14px;
+          font-weight: 300;
+          color: #ffffff;
+          letter-spacing: 1px; }
+        #about #teamMembers .cont-fluid .cont .team-member .info_first .info ul {
+          padding-left: 0px;
+          margin-top: 90px; }
+          #about #teamMembers .cont-fluid .cont .team-member .info_first .info ul li {
+            list-style: none;
+            display: inline-block;
+            height: 28px;
+            width: 28px;
+            border-radius: 100%;
+            border: 1px solid white;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s linear;
+            margin-right: 5px; }
+            #about #teamMembers .cont-fluid .cont .team-member .info_first .info ul li:last-child {
+              margin-right: 0px; }
+            #about #teamMembers .cont-fluid .cont .team-member .info_first .info ul li:hover {
+              color: #333333;
+              background-color: white; }
+              #about #teamMembers .cont-fluid .cont .team-member .info_first .info ul li:hover a {
+                color: #333333;
+                transition: all 0.2s linear; }
+            #about #teamMembers .cont-fluid .cont .team-member .info_first .info ul li a {
+              color: white;
+              font-size: 10px; }
+#about #slider .cont-fluid {
+  padding: 100px 0px;
+  height: inherit;
+  border-top: 1px solid #eaeaea; }
+  #about #slider .cont-fluid .cont .caroOut {
+    background-color: #25d25e;
+    padding: 40px 90px;
+    text-align: center; }
+    #about #slider .cont-fluid .cont .caroOut .caroItm {
+      padding: 50px 20px; }
+      #about #slider .cont-fluid .cont .caroOut .caroItm p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 300;
+        color: #fff;
+        margin-bottom: 30px; }
+      #about #slider .cont-fluid .cont .caroOut .caroItm h4 {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700; }
 
 span {
   background: grey; }
 
-span {
-  background: grey; }
+body {
+  height: 3000px; }
+
+#services #smartSeo {
+  padding: 40px 0px; }
+  #services #smartSeo .inner {
+    border: 1px solid #25d25e !important;
+    padding: 25px; }
+    #services #smartSeo .inner .heading h2 {
+      font-size: 28px;
+      font-weight: normal;
+      color: #333333;
+      margin: 0 0 15px 0; }
+    #services #smartSeo .inner .heading p {
+      font-size: 14px;
+      font-weight: 300;
+      color: #777777;
+      letter-spacing: 1px;
+      line-height: 26px; }
+    #services #smartSeo .inner ul {
+      display: flex;
+      align-items: center;
+      padding-left: 0px !important; }
+      #services #smartSeo .inner ul li {
+        list-style: none;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        line-height: 26px;
+        color: #777777;
+        display: inline-block;
+        margin-right: 25px;
+        position: relative; }
+        #services #smartSeo .inner ul li:before {
+          content: '|';
+          position: absolute;
+          right: -10px;
+          top: 0px; }
+        #services #smartSeo .inner ul li:last-child::before {
+          content: ''; }
+        #services #smartSeo .inner ul li a {
+          color: #333333 !important; }
+#services #golas .cont-fluid {
+  background: #f7f7f7;
+  padding: 100px 0px;
+  border-top: 1px solid #eaeaea; }
+  #services #golas .cont-fluid .cont .item {
+    padding-left: 60px;
+    position: relative;
+    text-align: center;
+    font-family: "Open Sans", sans-serif; }
+    #services #golas .cont-fluid .cont .item h4 {
+      color: #333333;
+      font-size: 28px;
+      font-weight: normal;
+      margin-bottom: 20px; }
+    #services #golas .cont-fluid .cont .item p {
+      color: #777777;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      line-height: 26px; }
+#services #teamMembers .cont-fluid {
+  padding: 100px 0px;
+  height: inherit; }
+  #services #teamMembers .cont-fluid .cont .heading {
+    margin-bottom: 40px; }
+    #services #teamMembers .cont-fluid .cont .heading h1 {
+      font-size: 28px;
+      font-weight: normal;
+      letter-spacing: 1.12px;
+      text-align: center;
+      padding-bottom: 25px;
+      margin-bottom: 20px;
+      position: relative; }
+      #services #teamMembers .cont-fluid .cont .heading h1:after {
+        content: '';
+        width: 80px;
+        height: 2px;
+        background-color: #25d25e;
+        position: absolute;
+        bottom: 0px;
+        left: calc(50% - 40px); }
+    #services #teamMembers .cont-fluid .cont .heading p {
+      font-size: 14px;
+      font-weight: 300;
+      color: #777777;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+      text-align: center; }
+  #services #teamMembers .cont-fluid .cont .team-member {
+    position: relative;
+    overflow: hidden;
+    height: 240px; }
+    #services #teamMembers .cont-fluid .cont .team-member .mouseInOut {
+      background-color: #f7f7f7;
+      border: 1px solid #ddd; }
+      #services #teamMembers .cont-fluid .cont .team-member .mouseInOut .img {
+        width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 50px; }
+        #services #teamMembers .cont-fluid .cont .team-member .mouseInOut .img img {
+          width: 80px;
+          margin-bottom: 20px; }
+        #services #teamMembers .cont-fluid .cont .team-member .mouseInOut .img h4 {
+          font-size: 18px;
+          font-weight: bold;
+          color: #333333; }
+          #services #teamMembers .cont-fluid .cont .team-member .mouseInOut .img h4:before {
+            content: '';
+            position: absolute;
+            bottom: 60px;
+            left: calc(50% - 40px);
+            right: 0px;
+            width: 80px;
+            height: 2px;
+            background: #25d25e; }
+        #services #teamMembers .cont-fluid .cont .team-member .mouseInOut .img .cover {
+          padding: 0px 15px;
+          position: absolute;
+          top: 0px;
+          left: 15px;
+          width: calc(100% - 30px);
+          max-width: 360px;
+          height: 100%;
+          background-color: #25d25e; }
+      #services #teamMembers .cont-fluid .cont .team-member .mouseInOut .info_first {
+        padding: 0px 15px;
+        position: absolute;
+        top: 0px;
+        left: 15px;
+        width: calc(100% - 30px);
+        max-width: 360px;
+        height: 100%;
+        margin: 0 auto;
+        display: none;
+        z-index: 2; }
+        #services #teamMembers .cont-fluid .cont .team-member .mouseInOut .info_first .info {
+          position: absolute;
+          left: 0px;
+          right: 0px;
+          top: 85px;
+          color: white;
+          text-align: center; }
+          #services #teamMembers .cont-fluid .cont .team-member .mouseInOut .info_first .info h4 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff; }
+          #services #teamMembers .cont-fluid .cont .team-member .mouseInOut .info_first .info p {
+            font-size: 14px;
+            font-weight: 300;
+            color: #ffffff;
+            letter-spacing: 1px; }
+          #services #teamMembers .cont-fluid .cont .team-member .mouseInOut .info_first .info ul {
+            padding-left: 0px;
+            margin-top: 90px; }
+            #services #teamMembers .cont-fluid .cont .team-member .mouseInOut .info_first .info ul li {
+              list-style: none;
+              display: inline-block;
+              height: 28px;
+              width: 28px;
+              border-radius: 100%;
+              border: 1px solid white;
+              text-align: center;
+              cursor: pointer;
+              transition: all 0.2s linear;
+              margin-right: 5px; }
+              #services #teamMembers .cont-fluid .cont .team-member .mouseInOut .info_first .info ul li:last-child {
+                margin-right: 0px; }
+              #services #teamMembers .cont-fluid .cont .team-member .mouseInOut .info_first .info ul li:hover {
+                color: #333333;
+                background-color: white; }
+                #services #teamMembers .cont-fluid .cont .team-member .mouseInOut .info_first .info ul li:hover a {
+                  color: #333333;
+                  transition: all 0.2s linear; }
+              #services #teamMembers .cont-fluid .cont .team-member .mouseInOut .info_first .info ul li a {
+                color: white;
+                font-size: 10px; }
 
 /*# sourceMappingURL=style.css.map */

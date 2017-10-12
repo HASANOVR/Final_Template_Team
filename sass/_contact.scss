@@ -1,3 +1,257 @@
-span{
-    background: grey;
+body{
+    height: 3000px;
 }
+// Header section
+    #header{
+
+    }
+
+
+
+
+
+// Main section
+    #services{
+        #smartSeo{
+            padding: 40px 0px;
+            .inner{
+                border: 1px solid $m-color !important;
+                padding: 25px;
+                
+                .heading{
+                    h2{
+                        font-size: 28px;
+                        font-weight: normal;
+                        color: $color-1;
+                        margin: 0 0 15px 0;
+                    }
+                    p{
+                        font-size: 14px;
+                        font-weight: 300;
+                        color: $color-2;
+                        letter-spacing: 1px;
+                        line-height: 26px;
+                    }
+
+                }
+                ul{
+                    
+                    display: flex;
+                    align-items: center;
+                    padding-left: 0px !important;
+                    li{
+                        list-style: none;
+                        font-size: 14px;
+                        font-weight: 300;
+                        letter-spacing: 1px;
+                        line-height: 26px;
+                        color:$color-2;
+                        display: inline-block;
+                        margin-right: 25px;
+                        position: relative;
+                        &:before{
+                            content: '|';
+                            position: absolute;
+                            right: -10px;
+                            top: 0px;
+                        }
+                        &:last-child::before{
+                            content: '';
+                        }
+
+                        a{
+                            color: $color-1 !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        #golas{
+            .cont-fluid{
+                background: $sec-color;
+                padding: 100px 0px;
+                border-top: 1px solid #eaeaea;
+                .cont{
+                    .item{
+                        padding-left: 60px;
+                        position: relative;
+                        text-align: center;
+                        font-family: $font-1;
+                        h4{
+                            color: $color-1;
+                            font-size: 28px;
+                            font-weight: normal;
+                            margin-bottom: 20px;
+                        }
+
+                        p{
+                            color: $color-2;
+                            font-size: 14px;
+                            font-weight: 300;
+                            letter-spacing: 1px;   
+                            line-height: 26px;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        #teamMembers{
+            .cont-fluid{
+                padding: 100px 0px;
+                height: inherit;
+                .cont{
+                    .heading{
+                            margin-bottom: 40px;
+                            h1{
+                            font-size: 28px;
+                            font-weight: normal;
+                            letter-spacing: 1.12px;
+                            text-align: center;
+                            padding-bottom: 25px;
+                            margin-bottom: 20px;
+                            position: relative;
+                            &:after{
+                                content: '';
+                                width:80px;
+                                height: 2px;
+                                background-color: $m-color;
+                                position: absolute;
+                                bottom: 0px;
+                                left: calc(50% - 40px);
+                            }
+                        }
+                        p{
+                            font-size: 14px;
+                            font-weight: 300;
+                            color: $color-2;
+                            letter-spacing: 1px;
+                            margin-bottom: 15px;
+                            text-align: center;
+                        }
+                    }
+                    .team-member{
+                        position: relative;
+                        overflow: hidden;
+                        height: 240px;
+                        .mouseInOut{
+                            background-color: $sec-color;
+                            border: 1px solid #ddd;
+                            .img{
+                                width: 100%;
+                                overflow: hidden;
+                                margin: 0 auto;
+                                text-align:center;
+                                padding-top: 50px;
+                                    img{
+                                        width: 80px;
+                                        margin-bottom: 20px;
+                                    }
+                                    h4{
+                                        font-size: 18px;
+                                        font-weight: bold;
+                                        color: $color-1;
+                                        &:before{
+                                            content: '';
+                                            position: absolute;
+                                            bottom: 60px;
+                                            left: calc(50% - 40px);
+                                            right: 0px;
+                                            width: 80px;
+                                            height: 2px;
+                                            background: $m-color;
+                                        }
+                                    }
+                                    .cover{
+                                    padding: 0px 15px;
+                                    position: absolute;
+                                    top: 0px;
+                                    left: 15px;
+                                    width: calc(100% - 30px);
+                                    max-width: 360px;
+                                    height: 100%;
+                                    background-color: $m-color;
+                                }
+                            }
+                            
+                            .info_first{
+                                padding: 0px 15px;
+                                position: absolute;
+                                top: 0px;
+                                left: 15px;
+                                width: calc(100% - 30px);
+                                max-width: 360px;
+                                height: 100%;
+                                margin: 0 auto;
+                                display: none;
+                                z-index: 2;
+                                .info{
+                                    position: absolute;
+                                    left: 0px;
+                                    right: 0px;
+                                    top: 85px;
+                                    color: white;
+                                    text-align: center;
+                                    h4{
+                                        font-size: 18px;
+                                        font-weight: bold;
+                                        color: #ffffff;
+                                        
+                                    }
+                                    p{
+                                        font-size: 14px;
+                                        font-weight: 300;
+                                        color: #ffffff;
+                                        letter-spacing: 1px;
+                                    }
+                                    ul{
+                                        padding-left: 0px;
+                                        margin-top: 90px;
+                                        li{
+                                            list-style: none;
+                                            display: inline-block;
+                                            height: 28px;
+                                            width: 28px;
+                                            border-radius: 100%;
+                                            border: 1px solid white;
+                                            text-align: center;
+                                            cursor: pointer;
+                                            transition: all 0.2s linear;
+                                            margin-right: 5px;
+                                            &:last-child{
+                                                margin-right: 0px;
+                                            }
+                                            &:hover{
+                                                color:$color-1;
+                                                background-color: white;
+                                                a{
+                                                    color:$color-1;
+                                                    transition: all 0.2s linear;
+                                                }
+        
+                                            }
+                                            a{
+                                                color: white;
+                                                font-size: 10px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                    
+                }
+            }
+        }
+    }
+
+
+
+// Footer section
+    #footer{
+        
+    }

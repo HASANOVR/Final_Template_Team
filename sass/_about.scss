@@ -1,3 +1,401 @@
-span{
-    background: $sec-color;
+body{
+    height: 3000px;
 }
+// Header section
+    #header{
+
+    }
+
+
+
+
+
+// Main section
+    #about{
+        #smartSeo{
+            padding: 40px 0px;
+            .inner{
+                border: 1px solid $m-color !important;
+                padding: 25px;
+                
+                .heading{
+                    h2{
+                        font-size: 28px;
+                        font-weight: normal;
+                        color: $color-1;
+                        margin: 0 0 15px 0;
+                    }
+                    p{
+                        font-size: 14px;
+                        font-weight: 300;
+                        color: $color-2;
+                        letter-spacing: 1px;
+                        line-height: 26px;
+                    }
+
+                }
+                ul{
+                    
+                    display: flex;
+                    align-items: center;
+                    padding-left: 0px !important;
+                    li{
+                        list-style: none;
+                        font-size: 14px;
+                        font-weight: 300;
+                        letter-spacing: 1px;
+                        line-height: 26px;
+                        color:$color-2;
+                        display: inline-block;
+                        margin-right: 25px;
+                        position: relative;
+                        &:before{
+                            content: '|';
+                            position: absolute;
+                            right: -10px;
+                            top: 0px;
+                        }
+                        &:last-child::before{
+                            content: '';
+                        }
+
+                        a{
+                            color: $color-1 !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        #golas{
+            .cont-fluid{
+                background: $sec-color;
+                padding: 100px 0px;
+                border-top: 1px solid #eaeaea;
+                .cont{
+                    .item{
+                        padding-left: 60px;
+                        position: relative;
+                        &:hover i{
+                            background: $m-color;
+                            color: white;
+                            transition: all 0.3s linear;
+                        }
+                        i{
+                            position: absolute;
+                            top: 3px;
+                            left: -13px;
+                            border: 1px solid #dddddd;
+                            color: #25d25e;
+                            font-size: 24px;
+                            padding: 17px 20px;
+                        }
+                        h4{
+                            color: $color-1;
+                            font-size: 18px;
+                            font-weight: normal;
+                            margin-bottom: 15px;
+                        }
+
+                        p{
+                            color: $color-2;
+                            font-size: 13px;
+                            font-weight: 300;
+                            letter-spacing: 1px;   
+                            line-height: 26px;
+                        }
+                    }
+                }
+            }
+        }
+
+        #ourCompany{
+            .cont-fluid{
+                padding: 100px 0px;
+                height: inherit;
+                border-top: 1px solid #eaeaea;
+                .cont{
+                    display: flex;
+                    // align-items: center;
+                    img{
+                        border-radius:5px;
+                    }
+                    .head{
+                        h2{
+                            position: relative;
+                            font-size: 28px;
+                            font-weight: normal;
+                            margin-bottom: 25px;
+                            padding-bottom: 25px;
+                            color: $color-1;
+                            &:before{
+                                content: '';
+                                position: absolute;
+                                bottom: 0px;
+                                left: 0px;
+                                width: 80px;
+                                height: 2px;
+                                background: $m-color;
+
+                            }
+                        }
+                        p{
+                            font-size: 14px;
+                            font-weight: 300;
+                            margin-bottom: 15px;
+                            color: $color-2;
+                            letter-spacing: 1px;
+                        }
+                    }
+                    #accordion{
+                        h3{
+                            font-size: 14px;
+                            letter-spacing: 1px;
+                            font-weight: 300;
+                            border-bottom: 1px solid lighten($color-2, 40%) ;
+                            color: $color-1;
+                            padding: 20px 0px;
+                            position: relative;
+                            cursor: pointer;
+                            display: block !important;
+                        }
+                        .plus{
+                            &:before{
+                            font-family: 'themify';
+                            content: '\e61a';
+                            position: absolute;
+                            right: 10px;
+                            top: 22px;
+                            color: $color-2;   
+                            }
+                        }
+                        .minus{
+                            &:before{
+                            font-family: 'themify';
+                            content: '\e622';
+                            position: absolute;
+                            right: 10px;
+                            top: 22px;
+                            color: $color-2;   
+                            }
+                        }
+
+                        p{
+                            font-size: 14px;
+                            letter-spacing: 1px;
+                            line-height: 26px;
+                            font-weight: 300;
+                            color: $color-2;
+                            padding: 20px;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        #counter{
+            .cont-fluid{
+                padding: 100px 0px;
+                height: inherit;
+                background: url("../img/counter-bg.jpg") repeat fixed center;
+            } 
+            .cont{
+                padding: 30px 0px;
+                h2{
+                float: left;
+                color:$m-color; 
+                font-weight: 900;
+                font-size:35px;
+                letter-spacing: 1px;
+                }
+                span{
+                    float: left;
+                    color:$m-color; 
+                    font-weight: 900;
+                    font-size:35px;
+                    letter-spacing: 1px;
+                    padding-bottom: 0px;
+                    line-height: 36px;
+                    margin-bottom: 0px;
+                    // padding-left: 4px;
+                    background-color: transparent;
+                    
+                }
+                p{
+                    clear: both;
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: #dddddd;
+                    letter-spacing: 1px;
+                }
+                .pad-left{
+                    // padding-left: 30px;
+                }
+            }
+            
+        }
+
+        #teamMembers{
+            .cont-fluid{
+                padding: 100px 0px;
+                height: inherit;
+                background: $sec-color;
+                .cont{
+                    .heading{
+                            margin-bottom: 40px;
+                            h1{
+                            font-size: 28px;
+                            font-weight: normal;
+                            letter-spacing: 1.12px;
+                            text-align: center;
+                            padding-bottom: 25px;
+                            margin-bottom: 20px;
+                            position: relative;
+                            &:after{
+                                content: '';
+                                width:80px;
+                                height: 2px;
+                                background-color: $m-color;
+                                position: absolute;
+                                bottom: 0px;
+                                left: calc(50% - 40px);
+                            }
+                        }
+                        p{
+                            font-size: 14px;
+                            font-weight: 300;
+                            color: $color-2;
+                            letter-spacing: 1px;
+                            margin-bottom: 15px;
+                            text-align: center;
+                        }
+                    }
+                    .team-member{
+                        position: relative;
+                        overflow: hidden;
+                        
+                        .img{
+                            width: 100%;
+                            overflow: hidden;
+                                .cover{
+                                padding: 0px 15px;
+                                position: absolute;
+                                top: 0px;
+                                left: 15px;
+                                width: calc(100% - 30px);
+                                max-width: 360px;
+                                height: 100%;
+                                background-color: $m-color;
+                            }
+                        }
+                        
+                        .info_first{
+                            padding: 0px 15px;
+                            position: absolute;
+                            top: 0px;
+                            left: 15px;
+                            width: calc(100% - 30px);
+                            max-width: 360px;
+                            height: 100%;
+                            margin: 0 auto;
+                            display: none;
+                            z-index: 2;
+                            .info{
+                                position: absolute;
+                                left: 0px;
+                                right: 0px;
+                                bottom: 0px;
+                                color: white;
+                                text-align: center;
+                                h4{
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    color: #ffffff;
+                                    
+                                }
+                                p{
+                                    font-size: 14px;
+                                    font-weight: 300;
+                                    color: #ffffff;
+                                    letter-spacing: 1px;
+                                }
+                                ul{
+                                    padding-left: 0px;
+                                    margin-top: 90px;
+                                    li{
+                                        list-style: none;
+                                        display: inline-block;
+                                        height: 28px;
+                                        width: 28px;
+                                        border-radius: 100%;
+                                        border: 1px solid white;
+                                        text-align: center;
+                                        cursor: pointer;
+                                        transition: all 0.2s linear;
+                                        margin-right: 5px;
+                                        &:last-child{
+                                            margin-right: 0px;
+                                        }
+                                        &:hover{
+                                            color:$color-1;
+                                            background-color: white;
+                                            a{
+                                                color:$color-1;
+                                                transition: all 0.2s linear;
+                                            }
+    
+                                        }
+                                        a{
+                                            color: white;
+                                            font-size: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                    
+                }
+            }
+        }
+
+        #slider{
+            .cont-fluid{
+                padding: 100px 0px;
+                height: inherit;
+                border-top: 1px solid #eaeaea;
+                .cont{
+                    .caroOut{
+                        background-color: $m-color;
+                        padding: 40px 90px;
+                        text-align: center;
+                        .caroItm{
+                            padding: 50px 20px;
+                            p{
+                                font-family: $font-1; 
+                                font-size: 20px;
+                                line-height: 28px;
+                                font-weight: 300;
+                                color: #fff;
+                                margin-bottom: 30px;
+                            }
+                            h4{
+                                color: #fff;
+                                font-size: 16px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+// Footer section
+    #footer{
+        
+    }
